@@ -47,10 +47,6 @@ class _SecondPageState extends State<SecondPage> {
       iconSize: 24,
       elevation: 16,
       style: TextStyle(color: Color(0xffA8A8D6)),
-      underline: Container(
-        height: 2,
-        color: Colors.deepPurpleAccent,
-      ),
       onChanged: (String newValue) {
         setState(() {
           dropdownValue = newValue;
