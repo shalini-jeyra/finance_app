@@ -1,3 +1,5 @@
+import 'package:finance_app/styles/styles.dart';
+
 import 'pages.dart';
 class ListTileWidget extends StatelessWidget {
   @override
@@ -10,22 +12,15 @@ class ListTileWidget extends StatelessWidget {
       ),
       title: Text(
         'Car Repair',
-        style: TextStyle(
-            fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
+        style:TextFonts.primaryHeader
       ),
       subtitle: Text(
         'Belong Interactive',
-        style: TextStyle(
-            fontSize: 10,
-            color: Colors.white54,
-            fontWeight: FontWeight.bold),
+        style: TextFonts.secondaryHeader
       ),
       trailing: Text(
         '+\$232.50',
-        style: TextStyle(
-            fontSize: 10,
-            color: Colors.white54,
-            fontWeight: FontWeight.bold),
+        style:TextFonts.secondaryHeader
       ),
     );
   }

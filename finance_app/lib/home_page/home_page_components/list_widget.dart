@@ -1,3 +1,5 @@
+import 'package:finance_app/styles/styles.dart';
+
 import 'pages.dart';
 class ListWidget extends StatelessWidget {
   @override
@@ -11,8 +13,7 @@ class ListWidget extends StatelessWidget {
       ),
       subtitle: Text(
         '\$92,510',
-        style: TextStyle(
-            fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+        style:TextFonts.ternaryHeader
       ),
     );
   }

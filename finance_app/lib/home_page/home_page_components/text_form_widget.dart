@@ -1,4 +1,5 @@
 import 'package:finance_app/home_page/home_page_components/pages.dart';
+import 'package:finance_app/styles/styles.dart';
 class TextFormWidget extends StatelessWidget {
    final IconData icon;
   final String text;
@@ -11,13 +12,7 @@ class TextFormWidget extends StatelessWidget {
     return Container(
       height: 190,
       width: 150,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
-            topRight: Radius.circular(30),
-            bottomLeft: Radius.circular(30),
-            bottomRight: Radius.circular(30)),
-        color: Color(0xff4733A6),
-      ),
+      decoration:BoxBorderDecoration.primary,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -30,8 +25,7 @@ class TextFormWidget extends StatelessWidget {
           ),
           Text(
             text,
-            style: TextStyle(
-                fontWeight: FontWeight.bold, color: Colors.white),
+            style:HeaderFonts.secondaryHeader,
           ),
           SizedBox(
             height: 10,
@@ -46,8 +40,7 @@ class TextFormWidget extends StatelessWidget {
           ),
           Text(
             text2,
-            style: TextStyle(
-                fontWeight: FontWeight.bold, color: Colors.white),
+            style: HeaderFonts.secondaryHeader,
           )
         ],
       ),

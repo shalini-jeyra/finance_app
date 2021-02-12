@@ -1,5 +1,4 @@
 import 'package:finance_app/styles/styles.dart';
-
 import 'pages.dart';
 
 class HeaderWidget extends StatelessWidget {
@@ -13,10 +12,7 @@ class HeaderWidget extends StatelessWidget {
           'Welcome Back',
           style:HeaderFonts.ternaryHeader
         ),
-        trailing: CircleAvatar(
-          radius: 20.0,
-          backgroundColor: Colors.white,
-        ),
+        trailing: CircleAvatarBorder.primary
       ),
     );
   }
